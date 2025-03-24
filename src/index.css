@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 214 60% 21%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 60% 21%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 60% 21%;
+
+    --primary: 214 84% 24%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 174 60% 46%;
+    --secondary-foreground: 214 60% 21%;
+
+    --muted: 214 20% 92%;
+    --muted-foreground: 214 24% 46%;
+
+    --accent: 174 60% 46%;
+    --accent-foreground: 214 60% 21%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 84% 24%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 214 60% 9%;
+    --foreground: 210 40% 98%;
+
+    --card: 214 60% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 214 60% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 214 90% 40%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 174 60% 40%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 214 24% 16%;
+    --muted-foreground: 214 20% 65%;
+
+    --accent: 174 60% 30%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 24% 24%;
+    --input: 214 24% 24%;
+    --ring: 214 90% 40%;
+
+    --sidebar-background: 214 60% 9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 214 90% 40%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 214 24% 16%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 214 24% 24%;
+    --sidebar-ring: 214 90% 40%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans min-h-screen;
+  }
+
+  .data-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(126, 219, 231, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(126, 219, 231, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .data-section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-12 text-center relative;
+  }
+  
+  .section-heading::after {
+    content: '';
+    @apply block w-24 h-1 bg-secondary mx-auto mt-4;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply relative px-2 py-1 font-medium tracking-wide text-[15px] text-foreground/80 hover:text-primary transition-all duration-300;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 opacity-0;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full opacity-100;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-card text-card-foreground rounded-lg border shadow-sm;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors
+    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+    disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90;
+  }
+}
