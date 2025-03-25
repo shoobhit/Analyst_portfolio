@@ -15,6 +15,8 @@ import NewProjectPage from "./pages/NewProjectPage";
 import NotFound from "./pages/NotFound";
 import { BlogProvider } from "./context/BlogContext";
 import { ProjectProvider } from "./context/ProjectContext";
+import { ThemeProvider } from "./components/ThemeProvider"; // Import ThemeProvider
+
 
 // Create the query client
 const queryClient = new QueryClient();
@@ -28,7 +30,9 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <Sonner />
-            <BrowserRouter>
+            <ThemeProvider> {/* Wrap the application in ThemeProvider */}
+              <BrowserRouter>
+
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/resume" element={<ResumePage />} />
@@ -40,7 +44,9 @@ function App() {
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
-            </BrowserRouter>
+              </BrowserRouter>
+            </ThemeProvider> {/* Close ThemeProvider */}
+
           </TooltipProvider>
         </ProjectProvider>
       </BlogProvider>

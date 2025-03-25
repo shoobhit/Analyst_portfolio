@@ -22,11 +22,11 @@ interface ProjectContextType {
 const initialProjects: Project[] = [
   {
     id: 1,
-    title: "Sales Prediction Model",
-    description: "Built a machine learning model to predict future sales trends based on historical data and external factors.",
+    title: "Telecom Customer Liftetime Value Prediction",
+    description: "Built a machine learning model to predict Customer Lifetime Value for telecom companies using regression model.",
     tools: ["Python", "Scikit-Learn", "Pandas"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
-    link: "https://github.com/example/sales-prediction"
+    link: "https://github.com/shoobhit/Telecom-Customer-Value-Prediction"
   },
   {
     id: 2,
