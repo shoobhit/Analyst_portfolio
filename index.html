@@ -8,14 +8,29 @@
     <meta name="author" content="Sobhit Tripathi" />
     
     <!-- Multiple favicon sizes for different devices -->
-    <!-- <link rel="icon" type="image/png" href="/portfolio_logo.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/portfolio_logo.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/portfolio_logo.png" sizes="96x96">
-    <link rel="apple-touch-icon" href="/portfolio_logo.png" sizes="180x180">
-    <meta property="og:image" content="/og-image.png" /> -->
+    <link rel="icon" type="image/png" href="/portfolio-logo.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/portfolio-logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/portfolio-logo.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/portfolio-logo.png" sizes="180x180">
+    <meta property="og:image" content="/og-image.png" />
     
     <!-- Add this line to import Plus Jakarta Sans font -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Add styles for round favicon -->
+    <style>
+      link[rel="icon"],
+      link[rel="apple-touch-icon"] {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      
+      /* Style for the actual image when used in the page */
+      img[src*="portfolio-logo"] {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    </style>
   </head>
 
   <body>
