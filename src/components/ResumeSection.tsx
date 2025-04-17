@@ -50,7 +50,7 @@ export function ResumeSection() {
                 <TabsContent value="experience" className="space-y-6">
                   <div className="border-l-4 border-primary pl-4 pb-6">
                     <h3 className="text-xl font-bold">Data Analyst Intern</h3>
-                    <p className="text-muted-foreground">Infotact PVT LTD. | Jan 2025 - Present</p>
+                    <p className="text-muted-foreground">Infotact PVT LTD. | Jan 2025 - March 2025</p>
                     <ul className="mt-2 list-disc list-inside text-foreground/80">
                       <li>Perform ETL processes on 150K+ transactions to enhance fraud detection using Python and SQL, improving model efficiency by 15%</li>
                       <li>Applied machine learning techniques (Random Forest) to improve fraud detection precision by 18%</li>
