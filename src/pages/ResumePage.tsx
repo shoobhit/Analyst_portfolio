@@ -14,7 +14,7 @@ const ResumePage = () => {
     <ThemeProvider defaultTheme="light">
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow container py-8">
+        <main className="flex-grow container pt-24 pb-8">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-3xl font-bold">My Resume</h1>
             <Button className="gap-2" onClick={handleDownload}>
@@ -22,12 +22,15 @@ const ResumePage = () => {
             </Button>
           </div>
           
-          <div className="bg-card border rounded-lg shadow-lg overflow-hidden h-[calc(100vh-12rem)]">
+          <div className="max-w-5xl mx-auto bg-card border rounded-lg shadow-lg overflow-hidden">
             <iframe 
-              src="/resume.pdf" 
-              title="Resume" 
-              className="w-full h-full" 
-              style={{ border: "none" }}
+              src="/resume.pdf#view=FitH"
+              title="Resume"
+              className="w-full h-[calc(100vh-180px)]"
+              style={{ 
+                border: "none",
+                aspectRatio: "1.4/1"
+              }}
             />
           </div>
         </main>

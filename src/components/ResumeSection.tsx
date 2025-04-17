@@ -25,11 +25,11 @@ export function ResumeSection() {
                   <Eye className="h-4 w-4" /> Preview Resume
                 </Button>
               </DialogTrigger>
-              <DialogContent className="max-w-4xl h-[90vh] p-6">
+              <DialogContent className="max-w-4xl h-[90vh]">
                 <iframe 
-                  src="/resume.pdf" 
-                  title="Resume Preview" 
-                  className="w-full h-full rounded-lg"
+                  src="/resume.pdf"
+                  title="Resume Preview"
+                  className="w-full h-full"
                   style={{ border: "none" }}
                 />
               </DialogContent>
