@@ -1,4 +1,3 @@
-
 import { Button } from "./ui/button";
 import { ArrowDownToLine, FileText, Eye } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
@@ -11,7 +10,6 @@ export function ResumeSection() {
   
   // Function to handle resume download
   const handleDownload = () => {
-    // This assumes your resume is stored in the public folder
     window.open("/resume.pdf", "_blank");
   };
 
@@ -27,11 +25,11 @@ export function ResumeSection() {
                   <Eye className="h-4 w-4" /> Preview Resume
                 </Button>
               </DialogTrigger>
-              <DialogContent className="max-w-4xl max-h-[80vh] overflow-auto">
+              <DialogContent className="max-w-4xl h-[90vh] p-6">
                 <iframe 
                   src="/resume.pdf" 
                   title="Resume Preview" 
-                  className="w-full h-[70vh]"
+                  className="w-full h-full rounded-lg"
                   style={{ border: "none" }}
                 />
               </DialogContent>
@@ -41,7 +39,7 @@ export function ResumeSection() {
             </Button>
           </div>
 
-          <Card className="shadow-lg border">
+          <Card>
             <CardContent className="p-6">
               <Tabs defaultValue="experience" className="w-full">
                 <TabsList className="grid w-full grid-cols-3 mb-8">
@@ -52,10 +50,9 @@ export function ResumeSection() {
                 <TabsContent value="experience" className="space-y-6">
                   <div className="border-l-4 border-primary pl-4 pb-6">
                     <h3 className="text-xl font-bold">Data Analyst Intern</h3>
-                    <p className="text-muted-foreground">Infotact PVT LTD. | Jan 2025 - Apr 2025</p>
+                    <p className="text-muted-foreground">Infotact PVT LTD. | Jan 2025 - Present</p>
                     <ul className="mt-2 list-disc list-inside text-foreground/80">
-                      <li>Perform ETL processes on 150K+ transactions to enhance fraud detection using Python
-                      and SQL, improving model efficiency by 15%</li>
+                      <li>Perform ETL processes on 150K+ transactions to enhance fraud detection using Python and SQL, improving model efficiency by 15%</li>
                       <li>Applied machine learning techniques (Random Forest) to improve fraud detection precision by 18%</li>
                       <li>Designed and implemented interactive Power BI dashboards to track fraud patterns</li>
                     </ul>
@@ -96,8 +93,7 @@ export function ResumeSection() {
                       "Machine Learning",
                       "Statistical Analysis",
                       "Data Visualization",
-                      "ETL",
-                      
+                      "ETL"
                     ].map((skill) => (
                       <div
                         key={skill}

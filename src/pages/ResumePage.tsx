@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDownToLine } from "lucide-react";
 import { Header } from "@/components/Header";
@@ -23,11 +22,11 @@ const ResumePage = () => {
             </Button>
           </div>
           
-          <div className="bg-card border rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-card border rounded-lg shadow-lg overflow-hidden h-[calc(100vh-12rem)]">
             <iframe 
               src="/resume.pdf" 
               title="Resume" 
-              className="w-full h-[80vh]" 
+              className="w-full h-full" 
               style={{ border: "none" }}
             />
           </div>
