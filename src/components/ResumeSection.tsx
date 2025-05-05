@@ -27,7 +27,7 @@ export function ResumeSection() {
               </DialogTrigger>
               <DialogContent className="max-w-4xl h-[90vh]">
                 <iframe 
-                  src="/resume.pdf"
+                  src="/SobhitTripathi_DataAnalyst.pdf"
                   title="Resume Preview"
                   className="w-full h-full"
                   style={{ border: "none" }}
