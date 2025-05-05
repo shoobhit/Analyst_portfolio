@@ -10,7 +10,7 @@ export function ResumeSection() {
   
   // Function to handle resume download
   const handleDownload = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open("/SobhitTripathi_DataAnalyst.pdf", "_blank");
   };
 
   return (
