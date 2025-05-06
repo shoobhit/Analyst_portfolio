@@ -44,22 +44,22 @@ const initialProjects: Project[] = [
     image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070",
     link: "https://app.powerbi.com/links/dHPiuY1luh?ctid=3dd109ae-4377-47e8-980f-6cc77e55e11a&pbi_source=linkShare"
   },
-  {
-    id: 4,
-    title: "Data Pipeline Optimization",
-    description: "Redesigned ETL processes to reduce data processing time by 40% and improve data quality.",
-    tools: ["Python", "Airflow", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=2070",
-    link: "https://github.com/example/data-pipeline"
-  },
-  {
-    id: 5,
-    title: "Market Basket Analysis",
-    description: "Implemented association rule mining to identify product purchase patterns and optimize product placement.",
-    tools: ["Python", "Apriori", "Pandas"],
-    image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076",
-    link: "https://github.com/example/market-basket"
-  },
+  // {
+  //   id: 4,
+  //   title: "Data Pipeline Optimization",
+  //   description: "Redesigned ETL processes to reduce data processing time by 40% and improve data quality.",
+  //   tools: ["Python", "Airflow", "PostgreSQL"],
+  //   image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=2070",
+  //   link: "https://github.com/example/data-pipeline"
+  // },
+  // {
+  //   id: 5,
+  //   title: "Market Basket Analysis",
+  //   description: "Implemented association rule mining to identify product purchase patterns and optimize product placement.",
+  //   tools: ["Python", "Apriori", "Pandas"],
+  //   image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076",
+  //   link: "https://github.com/example/market-basket"
+  // },
   
 ];
 
