@@ -53,13 +53,13 @@ const ProjectsPage = () => {
                     <ArrowLeft className="h-4 w-4" /> View Blog
                   </Link>
                 </Button>
-                {isOwner() && (
+                {/* {isOwner() && (
                   <Button asChild className="gap-2">
                     <Link to="/projects/new">
                       <PlusCircle className="h-4 w-4" /> New Project
                     </Link>
                   </Button>
-                )}
+                )} */}
               </div>
             </div>
           </section>

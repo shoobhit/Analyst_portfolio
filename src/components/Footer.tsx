@@ -76,7 +76,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="mailto:cssobhit@gmail.com" 
+              href="mailto:sobhit1801@gmail.com" 
               aria-label="Email"
               className="p-2 rounded-full hover:bg-background/80 dark:hover:bg-foreground/5 
                        transition-all duration-300 hover:text-primary dark:hover:text-primary/90

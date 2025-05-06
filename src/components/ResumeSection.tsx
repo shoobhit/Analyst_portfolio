@@ -10,7 +10,7 @@ export function ResumeSection() {
   
   // Function to handle resume download
   const handleDownload = () => {
-    window.open("/SobhitTripathi_DataAnalyst.pdf", "_blank");
+    window.open("/resume.pdf", "_blank");
   };
 
   return (
@@ -27,7 +27,7 @@ export function ResumeSection() {
               </DialogTrigger>
               <DialogContent className="max-w-4xl h-[90vh]">
                 <iframe 
-                  src="/SobhitTripathi_DataAnalyst.pdf"
+                  src="/resume.pdf"
                   title="Resume Preview"
                   className="w-full h-full"
                   style={{ border: "none" }}
@@ -89,6 +89,7 @@ export function ResumeSection() {
                       "SQL",
                       "DBMS",
                       "Power BI",
+                      "Alteryx",
                       "Excel",
                       "Machine Learning",
                       "Statistical Analysis",

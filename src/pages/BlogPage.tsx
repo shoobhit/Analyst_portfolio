@@ -45,14 +45,14 @@ const BlogPage = () => {
                     <ArrowLeft className="h-4 w-4" /> Back to Portfolio
                   </Link>
                 </Button>
-                <Button 
+                {/* <Button 
                   asChild 
                   className="gap-2 transition-all duration-300 hover:scale-105 hover:bg-primary/90"
                 >
                   <Link to="/blog/new">
                     <PlusCircle className="h-4 w-4" /> New Blog Post
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </section>

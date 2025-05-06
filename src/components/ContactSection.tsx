@@ -54,8 +54,8 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-medium">Email</h4>
-                      <a href="mailto:cssobhit@gmail.com" className="text-primary hover:underline">
-                        cssobhit@gmail.com
+                      <a href="mailto:sobhit1801@gmail.com" className="text-primary hover:underline">
+                        sobhit1801@gmail.com
                       </a>
                     </div>
                   </CardContent>

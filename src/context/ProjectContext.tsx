@@ -30,19 +30,19 @@ const initialProjects: Project[] = [
   },
   {
     id: 2,
-    title: "Customer Segmentation Analysis",
-    description: "Applied clustering algorithms to segment customers based on purchasing behavior and demographics.",
-    tools: ["R", "K-means", "Tableau"],
+    title: "Case Study on Walmart Sales data",
+    description: "This project focuses on analyzing Walmart sales data using SQL and Python. The data was cleaned and preprocessed using Python, stored in a PostgreSQL database, and analyzed through SQL queries to solve 9 key business problems.",
+    tools: ["PostgreSQL", "Python", "VS Code"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
-    link: "https://github.com/example/customer-segmentation"
+    link: "https://github.com/shoobhit/Walmart_Sales"
   },
   {
     id: 3,
-    title: "Interactive Sales Dashboard",
-    description: "Created an interactive dashboard that visualizes sales data across different regions and products.",
+    title: "Interactive Bank Loan Report Dashboard",
+    description: "Created an interactive dashboard that visualizes the loan distributed by bank across different regions and for different purposes",
     tools: ["Power BI", "SQL", "DAX"],
     image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070",
-    link: "https://github.com/example/sales-dashboard"
+    link: "https://app.powerbi.com/links/dHPiuY1luh?ctid=3dd109ae-4377-47e8-980f-6cc77e55e11a&pbi_source=linkShare"
   },
   {
     id: 4,
@@ -60,14 +60,7 @@ const initialProjects: Project[] = [
     image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076",
     link: "https://github.com/example/market-basket"
   },
-  {
-    id: 6,
-    title: "Churn Prediction Model",
-    description: "Built a machine learning model to predict customer churn and identify at-risk customers.",
-    tools: ["Python", "XGBoost", "Scikit-Learn"],
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070",
-    link: "https://github.com/example/churn-prediction"
-  }
+  
 ];
 
 // Create the context

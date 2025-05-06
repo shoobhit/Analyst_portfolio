@@ -59,7 +59,7 @@ const initialBlogPosts: BlogPost[] = [
       <h2>Conclusion</h2>
       <p>Mastering data visualization in Python can dramatically improve how you communicate insights. Practice regularly with different datasets to build your skills.</p>
     `,
-    date: "June 15, 2023",
+    date: "April 10, 2025",
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
     slug: "mastering-data-visualization-python"
@@ -113,7 +113,7 @@ const initialBlogPosts: BlogPost[] = [
       <h2>Conclusion</h2>
       <p>SQL optimization is both an art and a science. By implementing these techniques, you can significantly improve query performance and application responsiveness.</p>
     `,
-    date: "May 22, 2023",
+    date: "April 15, 2025",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2021",
     slug: "sql-optimization-techniques"
@@ -189,109 +189,13 @@ const initialBlogPosts: BlogPost[] = [
       <h2>Conclusion</h2>
       <p>Implementing predictive analytics requires both technical expertise and business acumen. Start with well-defined problems, focus on data quality, and continuously refine your approach based on results.</p>
     `,
-    date: "April 10, 2023",
+    date: "April 28, 2025",
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076",
     slug: "predictive-analytics-theory-practice"
   },
   {
     id: "4",
-    title: "Machine Learning for Time Series Forecasting",
-    excerpt: "Explore advanced techniques for predicting trends and patterns in time-based data.",
-    content: `
-      <h2>The Challenge of Time Series Data</h2>
-      <p>Time series forecasting presents unique challenges compared to traditional machine learning problems. This article explores modern approaches to predicting future values based on historical time-ordered data.</p>
-      
-      <h2>Traditional Statistical Methods</h2>
-      <p>Before diving into machine learning approaches, it's worth understanding classical methods:</p>
-      <pre><code>
-      # ARIMA example in Python
-      from statsmodels.tsa.arima.model import ARIMA
-      
-      # Fit model
-      model = ARIMA(time_series, order=(5, 1, 0))
-      model_fit = model.fit()
-      
-      # Forecast
-      forecast = model_fit.forecast(steps=30)
-      </code></pre>
-      
-      <h2>Feature Engineering for Time Series</h2>
-      <p>Effective time series models often require specialized feature engineering:</p>
-      <pre><code>
-      import pandas as pd
-      
-      # Create date-based features
-      df['dayofweek'] = df.index.dayofweek
-      df['quarter'] = df.index.quarter
-      df['month'] = df.index.month
-      df['year'] = df.index.year
-      df['dayofyear'] = df.index.dayofyear
-      
-      # Lag features
-      for i in range(1, 8):
-          df[f'lag_{i}'] = df['value'].shift(i)
-          
-      # Rolling window features
-      df['rolling_mean_7d'] = df['value'].rolling(window=7).mean()
-      df['rolling_std_7d'] = df['value'].rolling(window=7).std()
-      </code></pre>
-      
-      <h2>Advanced Machine Learning Models for Time Series</h2>
-      <p>Several specialized models have emerged for time series forecasting:</p>
-      <ol>
-        <li>XGBoost and LightGBM with time-based features</li>
-        <li>Prophet by Facebook</li>
-        <li>DeepAR by Amazon</li>
-        <li>Long Short-Term Memory (LSTM) networks</li>
-        <li>Temporal Convolutional Networks (TCN)</li>
-      </ol>
-      
-      <h2>LSTM Implementation Example</h2>
-      <pre><code>
-      from tensorflow.keras.models import Sequential
-      from tensorflow.keras.layers import LSTM, Dense
-      import numpy as np
-      
-      # Create sequences
-      def create_sequences(data, seq_length):
-          X, y = [], []
-          for i in range(len(data) - seq_length):
-              X.append(data[i:i + seq_length])
-              y.append(data[i + seq_length])
-          return np.array(X), np.array(y)
-      
-      X, y = create_sequences(scaled_data, seq_length=24)
-      
-      # Build LSTM model
-      model = Sequential()
-      model.add(LSTM(50, activation='relu', input_shape=(X.shape[1], X.shape[2])))
-      model.add(Dense(1))
-      model.compile(optimizer='adam', loss='mse')
-      
-      # Train
-      model.fit(X, y, epochs=100, batch_size=32, validation_split=0.1)
-      </code></pre>
-      
-      <h2>Evaluation Considerations</h2>
-      <p>Time series forecasting requires specialized evaluation approaches:</p>
-      <ul>
-        <li>Train/test splitting must respect time order</li>
-        <li>Cross-validation needs to be time-aware (TimeSeriesSplit)</li>
-        <li>Evaluation metrics should include scale-dependent (RMSE, MAE) and scale-independent measures (MAPE, SMAPE)</li>
-        <li>Consider the business impact of forecast errors</li>
-      </ul>
-      
-      <h2>Conclusion</h2>
-      <p>Time series forecasting continues to advance rapidly. While traditional statistical methods remain valuable, modern machine learning approaches can capture complex patterns and improve accuracy for many use cases.</p>
-    `,
-    date: "March 5, 2023",
-    readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1456428746267-a1756408f782?q=80&w=2070",
-    slug: "machine-learning-time-series-forecasting"
-  },
-  {
-    id: "5",
     title: "The Role of Data Ethics in Modern Analytics",
     excerpt: "Understanding the importance of ethical considerations in data collection and analysis.",
     content: `
@@ -365,88 +269,88 @@ const initialBlogPosts: BlogPost[] = [
       <h2>Conclusion</h2>
       <p>Ethical data practices are not just moral imperatives but also business necessities. Building trust through responsible data handling creates sustainable foundations for analytics programs.</p>
     `,
-    date: "February 18, 2023",
+    date: "April 25, 2025",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070",
     slug: "data-ethics-modern-analytics"
   },
-  {
-    id: "6",
-    title: "Building Interactive Dashboards with Tableau",
-    excerpt: "A comprehensive guide to creating impactful data visualizations for business intelligence.",
-    content: `
-      <h2>The Power of Visual Analytics</h2>
-      <p>Interactive dashboards transform raw data into actionable insights. This guide will help you create compelling Tableau dashboards that drive business decisions.</p>
+  // {
+  //   id: "6",
+  //   title: "Building Interactive Dashboards with Tableau",
+  //   excerpt: "A comprehensive guide to creating impactful data visualizations for business intelligence.",
+  //   content: `
+  //     <h2>The Power of Visual Analytics</h2>
+  //     <p>Interactive dashboards transform raw data into actionable insights. This guide will help you create compelling Tableau dashboards that drive business decisions.</p>
       
-      <h2>Dashboard Planning and Design</h2>
-      <p>Effective dashboards begin with thoughtful planning:</p>
-      <ol>
-        <li>Identify the primary audience and their needs</li>
-        <li>Define key metrics and questions to answer</li>
-        <li>Sketch layouts before building</li>
-        <li>Choose appropriate visualization types</li>
-        <li>Create a logical flow of information</li>
-      </ol>
+  //     <h2>Dashboard Planning and Design</h2>
+  //     <p>Effective dashboards begin with thoughtful planning:</p>
+  //     <ol>
+  //       <li>Identify the primary audience and their needs</li>
+  //       <li>Define key metrics and questions to answer</li>
+  //       <li>Sketch layouts before building</li>
+  //       <li>Choose appropriate visualization types</li>
+  //       <li>Create a logical flow of information</li>
+  //     </ol>
       
-      <h2>Creating Effective Visualizations</h2>
-      <p>Select the right chart types for your data stories:</p>
-      <ul>
-        <li><strong>Bar charts</strong> - For comparing categories</li>
-        <li><strong>Line charts</strong> - For showing trends over time</li>
-        <li><strong>Scatter plots</strong> - For identifying correlations</li>
-        <li><strong>Heat maps</strong> - For displaying patterns across two dimensions</li>
-        <li><strong>Tree maps</strong> - For hierarchical data</li>
-        <li><strong>Maps</strong> - For geographical analysis</li>
-      </ul>
+  //     <h2>Creating Effective Visualizations</h2>
+  //     <p>Select the right chart types for your data stories:</p>
+  //     <ul>
+  //       <li><strong>Bar charts</strong> - For comparing categories</li>
+  //       <li><strong>Line charts</strong> - For showing trends over time</li>
+  //       <li><strong>Scatter plots</strong> - For identifying correlations</li>
+  //       <li><strong>Heat maps</strong> - For displaying patterns across two dimensions</li>
+  //       <li><strong>Tree maps</strong> - For hierarchical data</li>
+  //       <li><strong>Maps</strong> - For geographical analysis</li>
+  //     </ul>
       
-      <h2>Adding Interactivity</h2>
-      <p>Interactive elements transform static dashboards into exploration tools:</p>
-      <ul>
-        <li>Filters and parameters</li>
-        <li>Actions (filter, highlight, URL)</li>
-        <li>Tooltips with contextual information</li>
-        <li>Show/hide containers</li>
-        <li>Drill-down capabilities</li>
-      </ul>
+  //     <h2>Adding Interactivity</h2>
+  //     <p>Interactive elements transform static dashboards into exploration tools:</p>
+  //     <ul>
+  //       <li>Filters and parameters</li>
+  //       <li>Actions (filter, highlight, URL)</li>
+  //       <li>Tooltips with contextual information</li>
+  //       <li>Show/hide containers</li>
+  //       <li>Drill-down capabilities</li>
+  //     </ul>
       
-      <h2>Advanced Techniques</h2>
-      <p>Take your dashboards to the next level with these techniques:</p>
-      <ol>
-        <li><strong>Calculated fields</strong> - Create custom metrics</li>
-        <li><strong>Level of Detail (LOD) expressions</strong> - Perform complex aggregations</li>
-        <li><strong>Table calculations</strong> - Generate dynamic comparisons</li>
-        <li><strong>Dashboard extensions</strong> - Add custom functionality</li>
-        <li><strong>Device-specific layouts</strong> - Optimize for different screens</li>
-      </ol>
+  //     <h2>Advanced Techniques</h2>
+  //     <p>Take your dashboards to the next level with these techniques:</p>
+  //     <ol>
+  //       <li><strong>Calculated fields</strong> - Create custom metrics</li>
+  //       <li><strong>Level of Detail (LOD) expressions</strong> - Perform complex aggregations</li>
+  //       <li><strong>Table calculations</strong> - Generate dynamic comparisons</li>
+  //       <li><strong>Dashboard extensions</strong> - Add custom functionality</li>
+  //       <li><strong>Device-specific layouts</strong> - Optimize for different screens</li>
+  //     </ol>
       
-      <h2>Performance Optimization</h2>
-      <p>Ensure your dashboards remain responsive:</p>
-      <ul>
-        <li>Use extracts instead of live connections where appropriate</li>
-        <li>Limit the number of marks displayed</li>
-        <li>Aggregate data when possible</li>
-        <li>Reduce unnecessary calculations</li>
-        <li>Test performance with expected data volumes</li>
-      </ul>
+  //     <h2>Performance Optimization</h2>
+  //     <p>Ensure your dashboards remain responsive:</p>
+  //     <ul>
+  //       <li>Use extracts instead of live connections where appropriate</li>
+  //       <li>Limit the number of marks displayed</li>
+  //       <li>Aggregate data when possible</li>
+  //       <li>Reduce unnecessary calculations</li>
+  //       <li>Test performance with expected data volumes</li>
+  //     </ul>
       
-      <h2>Storytelling with Data</h2>
-      <p>Transform information into narratives:</p>
-      <ol>
-        <li>Start with context and key findings</li>
-        <li>Guide users through logical analysis paths</li>
-        <li>Use consistent formatting and colors</li>
-        <li>Incorporate explanatory text</li>
-        <li>Highlight anomalies and important insights</li>
-      </ol>
+  //     <h2>Storytelling with Data</h2>
+  //     <p>Transform information into narratives:</p>
+  //     <ol>
+  //       <li>Start with context and key findings</li>
+  //       <li>Guide users through logical analysis paths</li>
+  //       <li>Use consistent formatting and colors</li>
+  //       <li>Incorporate explanatory text</li>
+  //       <li>Highlight anomalies and important insights</li>
+  //     </ol>
       
-      <h2>Conclusion</h2>
-      <p>Building effective Tableau dashboards requires both technical skill and design sensibility. Focus on solving real business problems and continually refine based on user feedback.</p>
-    `,
-    date: "January 22, 2023",
-    readTime: "9 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
-    slug: "interactive-dashboards-tableau"
-  }
+  //     <h2>Conclusion</h2>
+  //     <p>Building effective Tableau dashboards requires both technical skill and design sensibility. Focus on solving real business problems and continually refine based on user feedback.</p>
+  //   `,
+  //   date: "January 22, 2023",
+  //   readTime: "9 min read",
+  //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+  //   slug: "interactive-dashboards-tableau"
+  // }
 ];
 
 interface BlogContextType {
